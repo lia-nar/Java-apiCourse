@@ -1,5 +1,7 @@
 package com.amoibeojt.api.service.partsstock;
 
+import static com.amoibeojt.api.util.CollectionUtils.*;
+
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -35,10 +37,6 @@ public class  PartsStockService {
 	        search.getAmountMin(),
 	        search.getAmountMax()
 	    );
-	}
-
-	private <T> List<T> emptyToNull(List<T> list) {
-	    return (list == null || list.isEmpty()) ? null : list;
 	}
 
 }
